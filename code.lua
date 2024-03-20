@@ -16,6 +16,17 @@ local TextLabel = Instance.new("TextLabel")
 local Bars = Instance.new("Folder")
 local Bar1 = Instance.new("TextLabel")
 local Bar2 = Instance.new("TextLabel")
+local Misc = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Bars_2 = Instance.new("Folder")
+local Bar1_2 = Instance.new("TextLabel")
+local Bar2_2 = Instance.new("TextLabel")
+local UnlockFPS = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local VolcanoTP = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
@@ -163,9 +174,114 @@ Bar2.TextScaled = true
 Bar2.TextSize = 14.000
 Bar2.TextWrapped = true
 
+Misc.Name = "Misc"
+Misc.Parent = MainFrame
+Misc.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Misc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Misc.BorderSizePixel = 0
+Misc.Position = UDim2.new(1.06212831, 0, 0, 0)
+Misc.Size = UDim2.new(0.376227826, 0, 1, 0)
+
+UICorner_6.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_6.Parent = Misc
+
+Title_2.Name = "Title"
+Title_2.Parent = Misc
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0650684908, 0, 0.0571428575, 0)
+Title_2.Size = UDim2.new(0.866438329, 0, 0.238095239, 0)
+Title_2.Font = Enum.Font.Unknown
+Title_2.Text = "Config"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+TextLabel_2.Parent = Misc
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0787671208, 0, 0.838095248, 0)
+TextLabel_2.Size = UDim2.new(0.839041114, 0, 0.128571436, 0)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Volcano Map Only & Automatic Tools"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Bars_2.Name = "Bars"
+Bars_2.Parent = Misc
+
+Bar1_2.Name = "Bar1"
+Bar1_2.Parent = Bars_2
+Bar1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar1_2.BorderSizePixel = 0
+Bar1_2.Position = UDim2.new(0, 0, 0.809523821, 0)
+Bar1_2.Size = UDim2.new(1, 0, -0.00952380989, 0)
+Bar1_2.Font = Enum.Font.SourceSans
+Bar1_2.Text = ""
+Bar1_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bar1_2.TextScaled = true
+Bar1_2.TextSize = 14.000
+Bar1_2.TextWrapped = true
+
+Bar2_2.Name = "Bar2"
+Bar2_2.Parent = Bars_2
+Bar2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar2_2.BorderSizePixel = 0
+Bar2_2.Position = UDim2.new(0, 0, 0.304761916, 0)
+Bar2_2.Size = UDim2.new(1, 0, -0.00952380989, 0)
+Bar2_2.Font = Enum.Font.SourceSans
+Bar2_2.Text = ""
+Bar2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bar2_2.TextScaled = true
+Bar2_2.TextSize = 14.000
+Bar2_2.TextWrapped = true
+
+UnlockFPS.Name = "UnlockFPS"
+UnlockFPS.Parent = Misc
+UnlockFPS.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+UnlockFPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnlockFPS.BorderSizePixel = 0
+UnlockFPS.Position = UDim2.new(0.0696652383, 0, 0.385714293, 0)
+UnlockFPS.Size = UDim2.new(0.852739692, 0, 0.147619054, 0)
+UnlockFPS.Font = Enum.Font.SourceSansBold
+UnlockFPS.Text = "Unlock FPS"
+UnlockFPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockFPS.TextScaled = true
+UnlockFPS.TextSize = 14.000
+UnlockFPS.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_7.Parent = UnlockFPS
+
+VolcanoTP.Name = "VolcanoTP"
+VolcanoTP.Parent = Misc
+VolcanoTP.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+VolcanoTP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VolcanoTP.BorderSizePixel = 0
+VolcanoTP.Position = UDim2.new(0.0605626218, 0, 0.576190472, 0)
+VolcanoTP.Size = UDim2.new(0.852739692, 0, 0.147619054, 0)
+VolcanoTP.Font = Enum.Font.SourceSansBold
+VolcanoTP.Text = "Volcano TP"
+VolcanoTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+VolcanoTP.TextScaled = true
+VolcanoTP.TextSize = 14.000
+VolcanoTP.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.0500000007, 8)
+UICorner_8.Parent = VolcanoTP
+
 -- Scripts:
 
-local function QCXRUJS_fake_script() -- TreasureHuntSim.Handler 
+local function RVCC_fake_script() -- TreasureHuntSim.Handler 
 	local script = Instance.new('LocalScript', TreasureHuntSim)
 
 	local HttpService = game:GetService('HttpService')
@@ -187,6 +303,8 @@ local function QCXRUJS_fake_script() -- TreasureHuntSim.Handler
 	local MainFrame = ScreenGui.MainFrame
 	local FarmButton = MainFrame.Farm
 	local Textbox = MainFrame.TextBox
+	
+	local Misc = MainFrame.Misc
 	
 	function farm_code()
 		if _G.farm == true then
@@ -259,12 +377,19 @@ local function QCXRUJS_fake_script() -- TreasureHuntSim.Handler
 	local StrokeUI = Instance.new('UIStroke', MainFrame)
 	StrokeUI.Thickness = 2
 	
+	local StrokeUI2 = Instance.new('UIStroke', Misc)
+	StrokeUI2.Thickness = 2
+	
 	local Rainbow = coroutine.create(function()
 		while wait() do
 			for i = 1,255 do
 				StrokeUI.Color = Color3.fromHSV(i/255, 1, 1)
 				MainFrame.Bars.Bar1.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
 				MainFrame.Bars.Bar2.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
+				
+				StrokeUI2.Color = Color3.fromHSV(i/255, 1, 1)
+				MainFrame.Misc.Bars.Bar1.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
+				MainFrame.Misc.Bars.Bar2.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
 				wait()
 			end
 		end
@@ -273,22 +398,40 @@ local function QCXRUJS_fake_script() -- TreasureHuntSim.Handler
 	
 	coroutine.resume(Rainbow)
 	
-	local UnlockFPS = Instance.new('BindableFunction')
-	UnlockFPS.Name = 'UnlockFPS'
-	
-	UnlockFPS.OnInvoke = function(message)
-		if message == 'Unlock FPS' then
-			setfpscap(120)
-		end
-	end
-	
 	game:GetService('StarterGui'):SetCore('SendNotification', {
 		Title = 'Treasure Hunt Simulator GUI',
 		Text = 'Press Right-ALT to TOGGLE the GUI Exploit!',
 		Duration = math.huge,
-		Button1 = 'Unlock FPS',
-		Button2 = 'Okay!',
-		Callback = UnlockFPS
+		Button1 = 'Okay!',
 	})
+	
+	local UnlockDebounce = false
+	local UnlockText = Misc.UnlockFPS.Text
+	
+	Misc.UnlockFPS.MouseButton1Down:Connect(function()
+		if not UnlockDebounce then
+			UnlockDebounce = true
+			setfpscap(120)
+			Misc.UnlockFPS.Text = 'Success'
+			task.wait(1)
+			Misc.UnlockFPS.Text = UnlockText
+			UnlockDebounce = false
+		end
+	end)
+	
+	
+	local TPDebounce = false
+	local TPText = Misc.VolcanoTP.Text
+	
+	Misc.VolcanoTP.MouseButton1Down:Connect(function()
+		if not TPDebounce then
+			TPDebounce = true
+			HumanoidRootPart.CFrame = CFrame.new(2149.313720703125, 9.653246879577637, -274.75384521484375)
+			Misc.VolcanoTP.Text = 'Success'
+			task.wait(1)
+			Misc.VolcanoTP.Text = TPText
+			TPDebounce = false
+		end
+	end)
 end
-coroutine.wrap(QCXRUJS_fake_script)()
+coroutine.wrap(RVCC_fake_script)()
