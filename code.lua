@@ -4,7 +4,6 @@ local TreasureHuntSim = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
-local TextLabel = Instance.new("TextLabel")
 local Farm = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local Status = Instance.new("TextLabel")
@@ -13,8 +12,10 @@ local TextBox = Instance.new("TextBox")
 local UICorner_4 = Instance.new("UICorner")
 local Status_2 = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Bars = Instance.new("Folder")
+local Bar1 = Instance.new("TextLabel")
+local Bar2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -48,19 +49,6 @@ Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
 Title.TextWrapped = true
-
-TextLabel.Parent = MainFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.304761916, 0)
-TextLabel.Size = UDim2.new(1, 0, -0.00952380989, 0)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = ""
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
 
 Farm.Name = "Farm"
 Farm.Parent = MainFrame
@@ -130,36 +118,54 @@ Status_2.TextWrapped = true
 UICorner_5.CornerRadius = UDim.new(0.0500000007, 8)
 UICorner_5.Parent = Status_2
 
-TextLabel_2.Parent = MainFrame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0, 0, 0.809523821, 0)
-TextLabel_2.Size = UDim2.new(1, 0, -0.00952380989, 0)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = ""
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0787671208, 0, 0.838095248, 0)
+TextLabel.Size = UDim2.new(0.839041114, 0, 0.128571436, 0)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Volcano Map Only & Automatic Tools"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-TextLabel_3.Parent = MainFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0787671208, 0, 0.838095248, 0)
-TextLabel_3.Size = UDim2.new(0.839041114, 0, 0.128571436, 0)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Volcano Map Only & Automatic Tools"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+Bars.Name = "Bars"
+Bars.Parent = MainFrame
+
+Bar1.Name = "Bar1"
+Bar1.Parent = Bars
+Bar1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar1.BorderSizePixel = 0
+Bar1.Position = UDim2.new(0, 0, 0.809523821, 0)
+Bar1.Size = UDim2.new(1, 0, -0.00952380989, 0)
+Bar1.Font = Enum.Font.SourceSans
+Bar1.Text = ""
+Bar1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bar1.TextScaled = true
+Bar1.TextSize = 14.000
+Bar1.TextWrapped = true
+
+Bar2.Name = "Bar2"
+Bar2.Parent = Bars
+Bar2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar2.BorderSizePixel = 0
+Bar2.Position = UDim2.new(0, 0, 0.304761916, 0)
+Bar2.Size = UDim2.new(1, 0, -0.00952380989, 0)
+Bar2.Font = Enum.Font.SourceSans
+Bar2.Text = ""
+Bar2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bar2.TextScaled = true
+Bar2.TextSize = 14.000
+Bar2.TextWrapped = true
 
 -- Scripts:
 
-local function VHVQ_fake_script() -- TreasureHuntSim.Handler 
+local function QCXRUJS_fake_script() -- TreasureHuntSim.Handler 
 	local script = Instance.new('LocalScript', TreasureHuntSim)
 
 	local HttpService = game:GetService('HttpService')
@@ -249,5 +255,40 @@ local function VHVQ_fake_script() -- TreasureHuntSim.Handler
 			Textbox.Text = ''
 		end
 	end)
+	
+	local StrokeUI = Instance.new('UIStroke', MainFrame)
+	StrokeUI.Thickness = 2
+	
+	local Rainbow = coroutine.create(function()
+		while wait() do
+			for i = 1,255 do
+				StrokeUI.Color = Color3.fromHSV(i/255, 1, 1)
+				MainFrame.Bars.Bar1.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
+				MainFrame.Bars.Bar2.BackgroundColor3 = Color3.fromHSV(i/255, 1, 1)
+				wait()
+			end
+		end
+	end)
+	
+	
+	coroutine.resume(Rainbow)
+	
+	local UnlockFPS = Instance.new('BindableFunction')
+	UnlockFPS.Name = 'UnlockFPS'
+	
+	UnlockFPS.OnInvoke = function(message)
+		if message == 'Unlock FPS' then
+			setfpscap(120)
+		end
+	end
+	
+	game:GetService('StarterGui'):SetCore('SendNotification', {
+		Title = 'Treasure Hunt Simulator GUI',
+		Text = 'Press Right-ALT to TOGGLE the GUI Exploit!',
+		Duration = math.huge,
+		Button1 = 'Unlock FPS',
+		Button2 = 'Okay!',
+		Callback = UnlockFPS
+	})
 end
-coroutine.wrap(VHVQ_fake_script)()
+coroutine.wrap(QCXRUJS_fake_script)()
